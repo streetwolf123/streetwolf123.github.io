@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="style.css/formularz(warsztaty).css">
+</head>
+<body>
+    <a class="link">Pierwszy pełny formularz</a>
+    <form action="https://formspree.io/f/xaykwvab" method="POST">
+        <!--imię-->
+        <label for="username">Imię:</label>
+        <input type="text" name="username" id="username" required placeholder="Imię"><br>
+        <!--e-mail-->
+        <label for="e-mail">Adres e-mail:</label>
+        <input type="email" name="email" id="e-mail" required placeholder="E-mail"><br>
+        <!--numer telefonu-->
+        <label for="quantity">Numer telefonu:</label>
+        <input type="text" name="quantity" id="quantity" required placeholder="Numer telefonu">
+        <!--płeć-->
+        <p>Wybierz Płeć:</p>
+        <input type="radio" name="sex" value="male" id="male"><label for="male">Męzczyzna</label><br>
+      
+        <input type="radio" name="sex" value="famale" id="famale"><label for="famale">Kobieta</label>
+        <br>
+   
+        <!--wiek-->
+        <label for="Age">Wpisz wiek:</label>
+        <input type="number" name="Age" id="Age" required placeholder="Wiek"><br>
+        <!--wojewodztwa -->
+        <label for="Województwo">Wybierz województwo:</label>
+        <select name="Województwo" id="Województwo">
+            <option value="Zachodniopomorskie">Zachodniopomorskie</option>
+            <option value="Wielkopolskie">Wielkopolskie</option>
+            <option value="Warmińsko-Mazurskie">Warmińsko-Mazurskie</option>
+            <option value="Świętokrzyskie">Świętokrzyskie</option>
+            <option value="Śląskie">Śląskie</option>
+            <option value="Pomorskie">Pomorskie</option>
+            <option value="Podlaskie">Podlaskie</option>
+            <option value="Podkarpackie">Podkarpackie</option>
+            <option value="Opolskie">Opolskie</option>
+            <option value="Mazowieckie">Mazowieckie</option>
+            <option value="Małopolskie">Małopolskie</option>
+            <option value="Łódzkie">Łódzkie</option>
+            <option value="Lubuskie">Lubuskie</option>
+            <option value="Lubelskie">Lubelskie</option>
+            <option value="Kujawsko-Pomorskie">Kujawsko-Pomorskie</option>
+            <option value="Dolnośląskie">Dolnośląskie</option>
+        </select>
+             <!-- "select" pozwala tworzyć sówak wyświetlających się opcji do wyboru, "name" jest nazwą tego sówaka, -->
+        <Label for="City">Wybierz Miasto:</Label>
+        <select name="City" name="City" id="City">
+            <!-- moliwości które zaweiera sówak dodaje się przez "option" gdzie "Value" jest znaczeniem wyboru, a tekst pomiędzy otwarciem a zamknięciem jest jego nazwą-->
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+            <option value="Kraków">Kraków</option>
+            <option value="Wrocław">Wrocław</option>
+            <option value="Czarna">Czarna</option>
+            <option value="Zakopane">Zakopane</option>
+            <option value="Skaryszew">Skaryszew</option>
+         </select><br>
+
+            <!-- "maxlenght" daje limit wpisywanych słów w polu komentarza -->
+        <label for="textarea">Wpisz uwagi</label>
+        <textarea name="message" maxlength="50" id="textarea" ></textarea><br>
+
+        <input type="checkbox" name="agree" id="agree"><label for="agree">zgoda na przetwarzanie danych</label><br>
+
+        <input type="submit" value="Wyślij formularz" ><br>
+        
+        
+    </form>
+</body>
+</html> 
