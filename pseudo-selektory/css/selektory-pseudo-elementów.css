@@ -1,0 +1,10 @@
+/*selektory pseudo elementów*/
+#main-heading::before {
+    content: "#";
+    color: aqua;
+}
+ 
+#main-heading::after {
+    content: "$";
+    color: green;
+}

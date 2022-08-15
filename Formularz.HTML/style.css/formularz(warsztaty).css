@@ -1,0 +1,72 @@
+body {
+    background-color: darkblue;
+}
+
+a {
+    color: blue;
+}
+
+.link {
+    color: white;
+    background-color: black;
+    
+}
+
+form {
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+}
+
+
+
+input,
+select,
+textarea {
+    background-color: #2b4a64 ;
+    color: white ;
+    width: 20%;
+    margin-bottom: 10px ;
+    border: 1px solid #2b4a64 ;
+    padding: 5px;
+}
+
+label {
+    display: block;
+}
+
+label[for*="male"],
+label[for="agree"] {
+    display: inline;
+   
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: #4e708c;
+    border: 1px #fff;
+
+} 
+
+input[type="submit"] {
+    background-color: green;
+    width: auto;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+}
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+    padding: 13px 23px;
+}
